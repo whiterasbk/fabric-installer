@@ -161,17 +161,17 @@ publishing {
 			}
 		}
 	}
-	repositories {
-		maven {
-			if (ENV.MAVEN_URL) {
-				url ENV.MAVEN_URL
-				credentials {
-					username ENV.MAVEN_USERNAME
-					password ENV.MAVEN_PASSWORD
-				}
-			}
-		}
-	}
+	// repositories {
+	// 	maven {
+	// 		if (ENV.MAVEN_URL) {
+	// 			url ENV.MAVEN_URL
+	// 			credentials {
+	// 				username ENV.MAVEN_USERNAME
+	// 				password ENV.MAVEN_PASSWORD
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 // A task to ensure that the version being released has not already been released.
