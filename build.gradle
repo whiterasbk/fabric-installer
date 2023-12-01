@@ -109,11 +109,11 @@ task nativeExe(dependsOn: [shadowJar, downloadBootstrap], type: FileOutput) {
 		}
 	}
 }
-build.dependsOn nativeExe
+// build.dependsOn nativeExe
 
-jar {
-	enabled = false
-}
+// jar {
+// 	// enabled = false
+// }
 
 if (ENV.SIGNING_SERVER) {
 	remoteSign {
